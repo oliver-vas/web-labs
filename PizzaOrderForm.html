@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <!-- TITLE -->
+
+    <p><h1>Order our pizza!</h1></p><br>
+
+    <!-- FORM -->
+
+    <form>
+
+        <!-- ORDER DETAILS -->
+
+        <fieldset>
+            <legend>Your order:</legend><br>
+            
+            <!-- PIZZA DETAILS -->
+
+            <fieldset>
+                <legend>Pizza specification:</legend>
+
+                <!-- PIZZA SIZE -->
+                <br><label>Choose pizza size:</label><br>
+                <input type="radio" id="pizza_size1" name="pizza_size" required>
+                <label for="pizza_size1">Large</label><br>
+
+                <input type="radio" id="pizza_size2" name="pizza_size" required>
+                <label for="pizza_size2">Medium</label><br>
+
+                <input type="radio" id="pizza_size3" name="pizza_size" required>
+                <label for="pizza_size3">Small</label><br><br>
+
+                <!-- CRUST TYPE -->
+
+                <label for="pizza_crust">Choose pizza crust: </label><br>
+                <input list="crust_type" id="pizza_crust" name="pizza_crust" required>
+
+                <datalist id="crust_type">
+                    <option value="Neapolitan Crust"></option>
+                    <option value="Sicilian Crust"></option>
+                    <option value="New York Style Crust"></option>
+                    <option value="Thin Crust"></option>
+                    <option value="Thick Crust"></option>
+                    <option value="Gluten-Free Crust"></option>
+                </datalist><br><br>
+
+                <!-- PIZZA TOPPINGS -->
+
+                <label>Choose pizza topping(s):</label><br>
+
+                <input type="checkbox" id="topping1" name="topping1">
+                <label for="topping1">Mozzarella</label><br>
+
+                <input type="checkbox" id="topping2" name="topping2">
+                <label for="topping2">Cheddar</label><br>
+
+                <input type="checkbox" id="topping3" name="topping3">
+                <label for="topping3">Gorgonzola</label><br>
+
+                <input type="checkbox" id="topping4" name="topping4">
+                <label for="topping4">Ham</label><br>
+
+                <input type="checkbox" id="topping5" name="topping5">
+                <label for="topping5">Tuna</label><br>
+
+                <input type="checkbox" id="topping6" name="topping6">
+                <label for="topping6">Shrimps</label><br>
+
+                <input type="checkbox" id="topping7" name="topping7">
+                <label for="topping7">Mushrooms</label><br>
+
+                <input type="checkbox" id="topping8" name="topping8">
+                <label for="topping8">Olives</label><br>
+
+                <input type="checkbox" id="topping9" name="topping9">
+                <label for="topping9">Onions</label><br>
+
+                <input type="checkbox" id="topping10" name="topping10">
+                <label for="topping10">Ruccola</label><br><br>
+
+            </fieldset><br>
+
+            <!-- DELIVERY DETAILS -->
+
+            <fieldset>
+                <legend>Delivery details:</legend>
+
+                <br><label for="name_of_customer">Name: </label><br>
+                <input type="text" id="name_of_customer" name="name_of_customer" value="" placeholder="type your name here" size="30" required><br>
+
+                <label for="address_of_customer">Delivery address: </label><br>
+                <input type="text" id="address_of_customer" name="address_of_customer" value="" placeholder="Cozy Place 36, Yummy City, 0001 - Dreamland" size="45" required><br>
+
+                <label for="Message">Comments: </label><br>
+                <textarea id="Message" name="Message" placeholder="Please add any additional details or message for us. Thank you for your order!" rows="5" cols="50"></textarea><br><br>
+            </fieldset><br>
+
+            <!-- SUBMIT OR RESET -->
+
+            <input type="submit" value="Send order">
+            <input type="reset">
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
