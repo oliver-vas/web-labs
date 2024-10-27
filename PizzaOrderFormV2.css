@@ -1,0 +1,138 @@
+/* SITE BACKGROUND */
+
+body {
+    background-color: blanchedalmond;
+    align-items: center;
+    align-content: center;
+    font-family: Arial, "Comic Sans MS", Sans-Serif;
+    background-image: url("Pizzas.jpeg");
+    background-attachment: fixed;
+}
+
+/* FIELDSETS */
+
+fieldset.order {
+    background-color: coral;
+    border-radius: 0.8cm;
+    border: 2px outset coral;
+    margin: 2% 10% 2% 10%;
+    text-align: center;
+    opacity: 0.985;
+    font-size: x-large;
+}
+
+fieldset.pizza {
+    background-color: tomato;
+    border-radius: 0.8cm;
+    border: 2px outset tomato;
+    margin: 0.6cm 0.8cm 0.6cm 0.8cm;
+    opacity: 1;
+}
+
+fieldset.delivery {
+    background-color: tomato;
+    border-radius: 0.8cm;
+    border: 2px outset tomato;
+    margin: 0.6cm 0.8cm 0.6cm 0.8cm;
+    opacity: 1;
+}
+
+legend {
+    text-align: center;
+}
+
+/* TEXT */
+
+.section {
+    /* color: rgb(80, 80, 80); */
+    color: floralwhite;
+    text-shadow: 1.35px 1.35px 1.35px black;
+    text-decoration-line: underline;
+    text-decoration-color: tomato;
+    text-decoration-thickness: 15%;
+    font-weight: bold;
+}
+
+.subsection {
+    color: floralwhite;
+    text-shadow: 1.3px 1.3px 1.3px black;
+}
+
+.prompt {
+    color: floralwhite;
+    text-shadow: 1.15px 1.15px 1.15px black;
+}
+
+.item {
+    color: rgb(30, 30, 30);
+    text-shadow: 0.2px 0.2px 0.2px black;
+}
+
+h1 {
+    color: floralwhite;
+    text-align: center;
+    text-decoration-line: overline underline;
+    text-decoration-color: tomato;
+    text-decoration-thickness: 10%;
+    text-shadow: 2.5px 2.5px 2.5px black;
+    background-color: coral;
+    background-clip: padding-box;
+    border: 2px outset coral;
+    border-radius: 1cm;
+    padding: 1% 1% 1% 1%;
+    margin: 0% 38% 0% 38%;
+    opacity: 0.985;
+}
+
+/* FORM */
+
+form {
+    margin: 0% 15% 0% 15%;
+    text-align: center;
+}
+
+input {
+    border-radius: 7px;
+    border: 2px inset tomato;
+}
+
+.textfield {
+    /* height: 30px; */
+    font-size: x-large;
+}
+
+.buttons {
+    /* background-color: floralwhite;
+    border: 2px outset floralwhite; */
+    border-radius: 0.4cm;
+    color: black;
+    text-shadow: 0.1px 0.1px 0.1px gray;
+    width: 120px;
+    height: 50px;
+    font-size: large;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.submit_button {
+    /* text-decoration-line: underline;
+    text-decoration-color: green;
+    text-decoration-thickness: 20%; */
+    /* text-shadow: 2px 2px 2px green; */
+    background-color: mediumaquamarine;
+    border: 2px outset mediumaquamarine;
+}
+
+.reset_button {
+    /* text-decoration-line: underline;
+    text-decoration-color: crimson;
+    text-decoration-thickness: 20%; */
+    /* text-shadow: 2px 2px 2px crimson; */
+    background-color: lightcoral;
+    border: 2px outset lightcoral;
+}
+
+.textbox {
+    border: 2px inset tomato;
+    border-radius: 7px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>The Best Pizza</title>
+
+    <link rel="stylesheet" href="PizzaOrderFormV2.css">
+
+</head>
+
+<body>
+
+    <!-- TITLE -->
+
+    <p><h1>Order our pizza!</h1></p>
+
+    <!-- FORM -->
+
+    <form>
+
+        <!-- ORDER DETAILS -->
+
+        <fieldset class="order">
+
+            <legend class="section">Your order:</legend>
+
+            <!-- PIZZA DETAILS -->
+
+            <fieldset class="pizza">
+
+                <legend class="subsection">Pizza specification:</legend>
+
+                <!-- PIZZA SIZE -->
+                <br><label class="prompt">Choose pizza size:</label><br>
+                <input type="radio" id="pizza_size1" name="pizza_size" required>
+                <label class="item" for="pizza_size1">Large</label><br>
+
+                <input type="radio" id="pizza_size2" name="pizza_size" required>
+                <label class="item" for="pizza_size2">Medium</label><br>
+
+                <input type="radio" id="pizza_size3" name="pizza_size" required>
+                <label class="item" for="pizza_size3">Small</label><br><br>
+
+                <!-- CRUST TYPE -->
+
+                <label class="prompt" for="pizza_crust">Choose pizza crust: </label><br>
+                <input class="textfield" list="crust_type" id="pizza_crust" name="pizza_crust" required>
+
+                <datalist id="crust_type">
+
+                    <option value="Neapolitan Crust"></option>
+                    <option value="Sicilian Crust"></option>
+                    <option value="New York Style Crust"></option>
+                    <option value="Thin Crust"></option>
+                    <option value="Thick Crust"></option>
+                    <option value="Gluten-Free Crust"></option>
+
+                </datalist><br><br>
+
+                <!-- PIZZA TOPPINGS -->
+
+                <label class="prompt">Choose pizza topping(s):</label><br>
+
+                <input type="checkbox" id="topping1" name="topping1">
+                <label class="item" for="topping1">Mozzarella</label><br>
+
+                <input type="checkbox" id="topping2" name="topping2">
+                <label class="item" for="topping2">Cheddar</label><br>
+
+                <input type="checkbox" id="topping3" name="topping3">
+                <label class="item" for="topping3">Gorgonzola</label><br>
+
+                <input type="checkbox" id="topping4" name="topping4">
+                <label class="item" for="topping4">Ham</label><br>
+
+                <input type="checkbox" id="topping5" name="topping5">
+                <label class="item" for="topping5">Tuna</label><br>
+
+                <input type="checkbox" id="topping6" name="topping6">
+                <label class="item" for="topping6">Shrimps</label><br>
+
+                <input type="checkbox" id="topping7" name="topping7">
+                <label class="item" for="topping7">Mushrooms</label><br>
+
+                <input type="checkbox" id="topping8" name="topping8">
+                <label class="item" for="topping8">Olives</label><br>
+
+                <input type="checkbox" id="topping9" name="topping9">
+                <label class="item" for="topping9">Onions</label><br>
+
+                <input type="checkbox" id="topping10" name="topping10">
+                <label class="item" for="topping10">Ruccola</label><br><br>
+
+            </fieldset><br>
+
+            <!-- DELIVERY DETAILS -->
+
+            <fieldset class="delivery">
+
+                <legend class="subsection">Delivery details:</legend>
+
+                <br><label class="prompt" for="name_of_customer">Name: </label><br>
+                <input class="textfield" type="text" id="name_of_customer" name="name_of_customer" value="" placeholder="type your name here" size="40" required><br>
+
+                <label class="prompt" for="phone_number">Phone number: </label><br>
+                <input class="textfield" type="tel" id="phone_number" name="phone_number" placeholder="389-70-111222" pattern="[0-9]{3}-7[0-9]{1}-[0-9]{6}" size="40" required><br>
+
+                <label class="prompt" for="address_of_customer">Delivery address: </label><br>
+                <input class="textfield" type="text" id="address_of_customer" name="address_of_customer" value="" placeholder="Cozy Place 36, 0001 - Yummy City, Dreamland" size="40" required><br>
+
+                <label class="prompt" for="Message">Comments: </label><br>
+                <textarea class="textbox textfield" id="Message" name="Message" placeholder="Please add any additional details or message for us. Thank you for your order!" rows="5" cols="40"></textarea><br><br>
+
+            </fieldset><br>
+
+            <!-- SUBMIT OR RESET -->
+
+            <input class="buttons submit_button" type="submit" value="Send order">
+            <input class="buttons reset_button" type="reset">
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
